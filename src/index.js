@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 
-
+// The Index.js file is is just rendering file that DOM manipulates the "root" id in the "index.html"
 ReactDOM.render(
   <React.StrictMode>
     <App />
