@@ -38,8 +38,7 @@ const Home = () => {
           setError(err.message);
           console.log(err.message);
         })
-    }, []);
-    */ //<-- This dependency array is important because this array tells useEffect hook to only run for a certain render changes and NOT every time.
+    }, []);*/ //<-- This dependency array is important because this array tells useEffect hook to only run for a certain render changes and NOT every time.
 // the name variable and its state is now a dependency in its array, so useEffect will only run IF the name state is changed
 // Logical templating in reac { variable && <html> } is used for aynschronous API. It means if the variable is true then the right side of && is fired off. 
     // If we dont use the { variable && <html> } it will give an error because it takes some time to get the data and the html is already firing off.
