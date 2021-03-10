@@ -6,12 +6,6 @@ const Home = () => {
   //Deconstructing array variable and a function which we can name whatever usually with a prefix "set"
   // useState is called a HOOK. So it can hook to an event listener and changes the state of the component
   
-  //States of the Home component - must import useState first
-  /*const [blogs, setBlogs] = useState(null);
-  const [isPending, setIsPending] = useState(true);
-  const [error, setError] = useState(null);
-  */
-
   // useFetch() is a Custom hook: it is used so that it can be used in any component so states and useEffect hooks are reused whenever an API fetching is needed
 
   const { data: blogs, isPending, error } = useFetch('http://localhost:8000/blogs')
